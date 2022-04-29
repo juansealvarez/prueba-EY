@@ -108,4 +108,3 @@ media/
 *.pid
 
 /node_modules
-/frontend

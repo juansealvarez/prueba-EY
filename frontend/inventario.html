@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/inventario.css" rel="stylesheet" type="text/css" />
+        <link href="styles/bootstrap.css" rel="stylesheet" type="text/css" />
+        <script src="js/bootstrap.bundle.js"></script>
+    </head>
+
+    <body class="container">
+        <h1>Inventarios</h1>
+        <button id="but_agregar" class="btn btn-success mb-3" type="button">+</button>
+        <div id="tablita">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Cod. Art.</th>
+                        <th>Nombre Art.</th>
+                        <th>Desc. Art.</th>
+                        <th>Cant. Art.</th>
+                    </tr>
+                </thead>
+                <tbody id="data_inventarios">
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <div class="modal fade" id="modal_crear_inventario" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear Articulo</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <label class="form-label">Cod. Art.</label>
+                            <input id="input_codigo" type="text" class="form-control" />
+                        </div>
+                        <div>
+                            <label class="form-label">Nombre Art.</label>
+                            <input id="input_nombre" type="text" class="form-control" />
+                        </div>
+                        <div>
+                            <label class="form-label">Cant. Art.</label>
+                            <input id="input_cantidad" type="number" class="form-control" />
+                        </div>
+                        <div>
+                            <label class="form-label">Desc. Art.</label>
+                            <input id="input_descripcion" type="text" class="form-control" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal_but_cancelar" class="btn btn-success" type="button">
+                        Cancelar
+                    </button>
+                    <button id="modal_but_grabar" class="btn btn-success" type="button">
+                        Grabar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
