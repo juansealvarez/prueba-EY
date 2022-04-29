@@ -1,0 +1,12 @@
+table {
+    border: 1px solid black;
+}
+
+#tablita {
+    overflow:scroll;
+    height: 480px;
+}
+
+#error {
+    color: red;
+}
